@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registation Form</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(180deg, rgb(82, 186, 255), rgb(215, 110, 211),red)
+            }
+
+            tr{
+                color:white;
+                font-weight:bold;
+               height: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="action.php">
+            <table align="center"  >
+
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Enter your first name"> (Max 50 Characters Allowed)</td>
+                </tr>
+
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Enter your last name"> (Max 50 Characters Allowed)</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your Email"></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Enter your Mobile no."> (10 Digits Allowed)</td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender" id="Male">Male
+                        <input type="radio" name="Gender" id="Female">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth(DOB)</td>
+                    <td><input type="date" name="DOB" id="DOB"></td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td><textarea style="height: 100px"; width="200px"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" id="city" name="city" placeholder="Enter your city"> (Max 50 Characters Allowed)</td>
+                </tr>
+
+                <tr>
+                    <td>Pin code</td>
+                    <td><input type="number" id="pcode" name="pcode" placeholder="Enter your Pin Code"> (Max 6 Characters Allowed)</td>
+                </tr>
+
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" id="state" name="state" placeholder="Enter your state"> (Max 50 Characters Allowed)</td>
+                </tr>
+
+                <tr align="left">
+                    <td>Country</td>
+                    <td><input type="text" id="country" name="country" placeholder="Enter your Country"></td>
+                </tr>
+
+                <tr align="left">
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" id="draw" name="draw">Drawing
+                        <input type="checkbox" id="sing" name="sing">Singing
+                        <input type="checkbox" id="dance" name="dance">Dancing
+                        <input type="checkbox" id="sketch" name="sketch">Sketching<br>
+                        <input type="checkbox" id="others" name="others">Others
+                        <input type="text" name="others" id="others" placeholder="Enter Your Hobby">
+                        (Max 50<br> Characters Allowed)
+                    </td>
+                </tr>
+
+                <tr style="height:150px">
+                    <td>Qualification</td>
+                    <td>
+                        <input type="checkbox" id="10" name="10">High School(10th)<br>
+                        <input type="checkbox" id="12" name="12">Higher School(12th)<br>
+                        <input type="checkbox" id="graduation" name="graduation">Graduation(Bachelors)<br>
+                        <input type="checkbox" id="pg" name="pg">Post Graduation(Masters)<br>
+                        <input type="checkbox" id="phd" name="phd">Phd
+                    </td>
+                </tr>
+
+                <tr style="height:150px">
+                    <td>Courses<br> Applied For</td>
+                    <td>
+                        <input type="radio" name="course" id="bca">BCA(Bachelors of Computer Applications)<br>
+                        <input type="radio" name="course" id="bcom">B.Com(Bachelours of Commerce)<br>
+                        <input type="radio" name="course" id="bsc">B.Sc(Bachelours of Science)<br>
+                        <input type="radio" name="course" id="BA">BA(Bachelours of Arts)<br>
+                        <input type="radio" name="course" id="MCA">MCA(Master of Computer Application)<br>
+                        <input type="radio" name="course" id="M.Com">M.Com(Master of Commerce)<br>
+                        <input type="radio" name="course" id="M.Sc">M.Sc(Master of Science)<br>
+                        <input type="radio" name="course" id="MA">MA(Master of Arts)<br>
+                    </td>
+                </tr>
+
+                <tr style="height:100px;"> 
+                    <td colspan="2" align="center"  >
+                        <input type="Submit" name="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset" value="Reset">
+                    </td>
+                </tr>
+                
+
+            </table>
+        </form>
+    </body>
+</html>
